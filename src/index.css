@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.App {
+  text-align: center;
+  background-color: #eaf6fd;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.Weather {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Weather p {
+  margin: 5px 0;
+}
+
+@keyframes coldAnimation {
+  0% {
+    color: #3498db;
+  }
+  50% {
+    color: #2980b9;
+  }
+  100% {
+    color: #3498db;
+  }
+}
+
+.Cold {
+  animation: coldAnimation 2s infinite;
+}
